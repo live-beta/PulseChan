@@ -29,5 +29,22 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+        <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.4.0.RELEASE</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                        <addClasspath>true</addClasspath>
+                       <!--  <mainClass>com.example.jbot.JBotApplication</mainClass> -->
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
